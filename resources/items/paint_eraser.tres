@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/entities/items/item_definition.gd" id="1_definition"]
+
+[resource]
+script = ExtResource("1_definition")
+item_id = &"paint_eraser"
+display_name = "Apagador"
+effect = 2
+pickup_color = Color(1, 0.45, 0.08, 1)

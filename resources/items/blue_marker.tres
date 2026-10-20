@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/entities/items/item_definition.gd" id="1_definition"]
+
+[resource]
+script = ExtResource("1_definition")
+item_id = &"blue_marker"
+display_name = "Marcador Azul"
+effect = 1
+pickup_color = Color(0.05, 0.28, 1, 1)
