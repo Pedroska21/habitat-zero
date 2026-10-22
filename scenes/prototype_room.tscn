@@ -1,7 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://cywvsk0rqwrp4"]
+[gd_scene format=3 uid="uid://cywvsk0rqwrp4"]
 
-[ext_resource type="PackedScene" path="res://scenes/levels/prototype_room.tscn" id="1_level"]
+[ext_resource type="PackedScene" uid="uid://ddob5s536sxrb" path="res://scenes/levels/prototype_room.tscn" id="1_level"]
 
-[node name="PrototypeRoomCompatibility" type="Node3D"]
+[node name="PrototypeRoomCompatibility" type="Node3D" unique_id=170155951]
 
-[node name="PrototypeRoom" parent="." instance=ExtResource("1_level")]
+[node name="PrototypeRoom" parent="." unique_id=819581048 instance=ExtResource("1_level")]

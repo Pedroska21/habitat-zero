@@ -1,28 +1,28 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene format=3 uid="uid://djbbs3npnphrl"]
 
-[ext_resource type="Script" path="res://scripts/entities/items/world_item.gd" id="1_world_item"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_item"]
-size = Vector3(0.32, 0.32, 0.32)
-
-[sub_resource type="BoxShape3D" id="BoxShape_item"]
-size = Vector3(0.32, 0.32, 0.32)
+[ext_resource type="Script" uid="uid://pwh236jb1yvf" path="res://scripts/entities/items/world_item.gd" id="1_world_item"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_item"]
 friction = 0.9
 bounce = 0.04
 
-[node name="WorldItem" type="RigidBody3D"]
+[sub_resource type="BoxMesh" id="BoxMesh_1767v"]
+size = Vector3(0.32, 0.32, 0.32)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qm0fi"]
+size = Vector3(0.32, 0.32, 0.32)
+
+[node name="WorldItem" type="RigidBody3D" unique_id=1045580733]
 mass = 0.48
+physics_material_override = SubResource("PhysicsMaterial_item")
 linear_damp = 1.2
 angular_damp = 3.5
-physics_material_override = SubResource("PhysicsMaterial_item")
 script = ExtResource("1_world_item")
 
-[node name="Mesh" type="MeshInstance3D" parent="."]
-position = Vector3(0, 0.2, 0)
-mesh = SubResource("BoxMesh_item")
+[node name="Mesh" type="MeshInstance3D" parent="." unique_id=1170043280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19558991, 0)
+mesh = SubResource("BoxMesh_1767v")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-position = Vector3(0, 0.2, 0)
-shape = SubResource("BoxShape_item")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=584735042]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19558991, 0)
+shape = SubResource("BoxShape3D_qm0fi")
